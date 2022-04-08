@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+body > header {
+    background: rgb(22, 2, 95);
+    color: white;
+    display: flex; /* need this to establish its a flex box!! */
+    justify-content: space-between; /* this is placing the two parts far right and far left */
+    align-items: center; /* this is vrtical alignment, so they are using simialr nbaseline */
+    padding: 10px 2%;
+  }
+
+#logo {
+    font-family: 'Lobster';
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+.nav_links > ul > li {
+  list-style: none;
+  padding: 0 10px 10px 0;
+
+}
+
+.nav_links > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+
+body > p {
+    margin: 20px;
+  }
+
+.event_list  {
+    margin: 20px;
+  }
+
+.new_form {
+    padding: 20px;
+}
+  
+h2 {
+    font-family: 'Grape Nuts';
+    font-size: 30px;
+    color: rgb(22, 2, 95);
+    margin: 15px;
+  }
+
+footer {
+  background-color: rgb(22, 2, 95);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+footer > p {
+  font-size: 10px;
+}
+
+
+

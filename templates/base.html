@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Grape+Nuts&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Grape+Nuts&family=Lobster&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    
+    
     <title>{{title}} List of Events</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home Page</a>
-            </li>
-            <li>
-                <a href="/events">List of all Events</a>
-            </li>
+    <header>
+        <h1 id="logo"> AMAZING EVENTS </h1>
 
-        </ul>
-    </nav>   
-    <hr>
+
+        <nav class="nav_links">
+            <ul>
+                <li>
+                    <a href="/">Home Page</a>
+                </li>
+                <li>
+                    <a href="/events">List of all Events</a>
+                </li>
+                <li>
+                    <a href="/events">Add a New Event</a>
+                </li>
+            </ul>
+        </nav>   
+    </header>
+
 
     {% block content %}
         
     {% endblock content %}
+
+    <footer>
+        <p>
+            &copy CDufficy 2022
+        </p>
+    </footer>
 
 </body>
 </html>

@@ -2,18 +2,21 @@
 
 {% block content %}
 
-    <h1>Today's List of Events</h1>
+    <h2>Today's List of Events</h2>
 
+    <div class="event_list"></div>
     {% for event in all_events %}
         <li>
                 {{ event.event_name }}
         </li>
+    </div>
     {% endfor %}
 
     <br>
     <br>
 
-    <h1>Add a new event</h1>
+    <h2>Add a new event</h2>
+    <div class="new_form">
     <form action="/events" method="post"> 
         
         <label for="title">Event Name</label> 
