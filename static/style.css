@@ -50,6 +50,19 @@ h2 {
     margin: 15px;
   }
 
+.contact {
+  position: fixed;
+  left: 0;
+  bottom: 7%;
+  width: 100%;
+  text-align: center;
+}
+
+.contact {
+  color: red;
+  
+}
+
 footer {
   background-color: rgb(22, 2, 95);
   position: fixed;
@@ -61,8 +74,16 @@ footer {
 }
 
 footer > p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
+.new_form {
+  width: 600px;
+}
 
-
+input[type=text], input[type=date], input[type=number], textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid rgb(22, 2, 95);
+  margin-bottom: 1px;
+}

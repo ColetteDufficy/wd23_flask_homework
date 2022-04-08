@@ -17,13 +17,13 @@
 
     <h2>Add a new event</h2>
     <div class="new_form">
-    <form action="/events" method="post"> 
+     <form action="/events" method="post"> 
         
         <label for="title">Event Name</label> 
-        <input type="text" name="title" id="title"> 
+        <input type="text" name="title" id="title" > 
 <br>
         <label for="date">Date of Event</label> 
-        <input type="text" name="date" id="date"> 
+        <input type="date" name="date" id="date"> 
 <br>
         <label for="guest numbers">Expected Number of Guests</label> 
         <input type="number" name="guest numbers" id="guest numbers"> 
@@ -34,7 +34,7 @@
         
 <br>
         <label for="description">Description</label>
-        <textarea name="description" rows="2" cols="30" id="description"></textarea>
+        <textarea name="description" rows="3" cols="30" id="description" placeholder="Enter a short description here..."></textarea>
 <br>
         <input type="submit" value="Add Event">
       </form>
