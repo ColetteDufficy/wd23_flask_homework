@@ -4,16 +4,25 @@
 
     <h2>Today's List of Events</h2>
 
-    <div class="event_list"></div>
-    {% for event in all_events %}
-        <li>
-                {{ event.event_name }}
-        </li>
-    </div>
-    {% endfor %}
+    <div class="event_list">
+        <!-- {% for event in all_events %}
+            <li>
+                    {{ event.event_name }}
+            </li>
+        {% endfor %} -->
 
-    <br>
-    <br>
+        
+        {% for event in all_events %}
+        <li>
+            {{ event.event_name }}: <em>{{ event.date }}</em>
+                {% if event.reoccuring %}
+                <span> &#9989;</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </div>
+    <p>------------------------------------------------------------------------------</p>
+
 
     <h2>Add a new event</h2>
     <div class="new_form">
@@ -34,10 +43,26 @@
         
 <br>
         <label for="description">Description</label>
-        <textarea name="description" rows="3" cols="30" id="description" placeholder="Enter a short description here..."></textarea>
+        <textarea name="description" rows="2" cols="30" id="description" placeholder="Enter a short description here..."></textarea>
+<br>
+<br>
+        <input type="checkbox" name="reoccuring" value=False>
+        <label for="reoccuring"> Tick if this event is reoccuring</label>
+    <br>
+
+        <!-- <input type="checkbox" name="reoccuring" value=False>
+        <label for="reoccuring"> Tick if this event is not reoccuring</label> -->
+
+        <!-- <input type="hidden" name="reoccuring" value="reoccuring">
+        <label for="reoccuring">Tick if this event is reoccuring </label> -->
+
+<br>
 <br>
         <input type="submit" value="Add Event">
       </form>
+<br>
+<br>
+<br>
 
     
 {% endblock content %}

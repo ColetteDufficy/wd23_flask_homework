@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Grape+Nuts&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,13 +31,18 @@
         <nav class="nav_links">
             <ul>
                 <li>
-                    <a href="/" target="_blank">Home Page</a>
+                    <!-- insert < target="_blank" > after the a ref if u want it to open on a new tab. not appropriate here -->
+                    <a href="/">Home Page</a>
                 </li>
                 <li>
-                    <a href="/events" target="_blank">List of all Events</a>
+                    <a href="/events">List of all Events</a>
                 </li>
                 <li>
-                    <a href="/events" target="_blank">Add a New Event</a>
+                    <a href="/events">Add a New Event</a>
+                </li>
+                </li>
+                <li>
+                    <a href="/"> <button class="contact_button"> Contact Us </button></a>
                 </li>
             </ul>
         </nav>   
@@ -48,8 +53,8 @@
         
     {% endblock content %}
 
-    <a class="contact" href="#" target="_blank"> <button>Contact Us</button>
-    </a>
+    <!-- <a class="contact" href="#" target="_blank"> <button>Contact Us</button>
+    </a> -->
 
     <footer>
         <p class="copyright">

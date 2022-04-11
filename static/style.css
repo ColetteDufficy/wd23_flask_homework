@@ -13,6 +13,8 @@ body > header {
     padding: 10px 2%;
   }
 
+
+
 #logo {
     font-family: 'Lobster';
     font-size: 40px;
@@ -30,6 +32,15 @@ body > header {
   text-decoration: none;
 }
 
+.contact_button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  padding: 5px 25px 5px 25px;
+}
+
 
 body > p {
     margin: 20px;
@@ -37,6 +48,7 @@ body > p {
 
 .event_list  {
     margin: 20px;
+    /* border: 2px solid red; */
   }
 
 .new_form {
@@ -58,10 +70,6 @@ h2 {
   text-align: center;
 }
 
-.contact {
-  color: red;
-  
-}
 
 footer {
   background-color: rgb(22, 2, 95);
